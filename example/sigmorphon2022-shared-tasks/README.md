@@ -8,12 +8,12 @@ Run input-invariant transformer [(Wu and Cotterell, 2019)](https://arxiv.org/abs
 ```bash
 model=tagtransformer # input-invariant transformer, or `model=transformer` the vanilla transformer
 # Large training
-for lang in ang ara asm evn got heb khk kor krl lud non poma veps
+for lang in ang ara asm evn got heb hun kat khk kor krl lud non pol poma slk tur vep
     bash example/sigmorphon2022-shared-tasks/task0-trm.sh $lang $model large
 done
 
 # Small training
-for lang in ang ara asm evn goh got guj heb khk kor krl lud nds non poma sjo veps
+for lang in ang ara asm bra ckt evn gml goh got guj heb hsb hsi hun itl kat ket khk kor krl lud mag nds non pol poma sjo slk tur vep
     bash example/sigmorphon2022-shared-tasks/task0-trm.sh $lang $model small
 done
 ```
